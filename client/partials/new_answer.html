@@ -1,0 +1,14 @@
+<div ng-controller="NewAnswerController">
+    <a href="/#!/dashboard">Home</a>
+    <a href="#">Logout</a>
+    <a href="/#!/question/{{question._id}}">Go back to question</a>
+
+    <h1>{{question.title}}</h1>
+    <p>{{question.description}}</p>
+
+    <label>Your Answer: </label> <br>
+    <textarea ng-model="newAnswer.title" rows="8" cols="80"></textarea> <br>
+    <label>Supporting details: (optional)</label> <br>
+    <textarea ng-model="newAnswer.description" rows="8" cols="80"></textarea> <br>
+    <button ng-click="submit()">submit</button>
+</div>

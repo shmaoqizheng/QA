@@ -1,0 +1,14 @@
+<div ng-controller="NewQuestionController">
+    <a href="/#!/dashboard">Home</a>
+    <a href="#">Logout</a>
+
+    <h1>New Question</h1>
+
+    <label>Question</label> <br>
+    <input ng-model="newQuestion.title"></input> <br>
+
+    <label>Description (optional)</label> <br>
+    <textarea ng-model="newQuestion.description" rows="8" cols="80"></textarea>
+
+    <button ng-click="addQuestion()">Post</button>
+</div>
